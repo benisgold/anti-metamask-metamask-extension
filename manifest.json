@@ -1,0 +1,14 @@
+{
+  "name": "Anti Metamask Metamask Extension",
+  "description": "rainbow.me",
+  "version": "1.0",
+  "manifest_version": 2,
+  "content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
